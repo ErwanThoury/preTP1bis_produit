@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sio.pretp.HelloController">
+   <children>
+      <HBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ListView fx:id="lvProduit" onMouseClicked="#clickLvProduit" prefHeight="400.0" prefWidth="200.0" />
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="400.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="lblNom" text="Steak Haché" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label alignment="CENTER" text="Marque : ">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label alignment="CENTER" text="Prix : ">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label alignment="CENTER" text="Disponible : ">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label alignment="CENTER" text="Quantité :" />
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label fx:id="lblMarque" alignment="CENTER" text="Chabal">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label fx:id="lblPrix" alignment="CENTER" text="12€/kg">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label fx:id="lblDispo" alignment="CENTER" text="Non">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label fx:id="lblQuantite" alignment="CENTER" text="2" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="lblCategorie" alignment="CENTER" text="Viande" />
+                        <Label fx:id="lblRayon" text="Rayon boucherie">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</Pane>
